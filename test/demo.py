@@ -11,9 +11,7 @@ from ze2nb import ze2nb
 ze2nb('H2o_Sparking.json')
 
 # scenario 2
-
 output = os.path.abspath(os.path.join(sys.path[0])) +'/output'
-
 ze2nb('H2o_Sparking.json', out_path=output, to_html=True, to_py=True)
 
 # scenario 3
