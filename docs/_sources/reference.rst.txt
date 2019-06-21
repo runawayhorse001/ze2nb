@@ -1,0 +1,9 @@
+.. _reference:
+
+==============
+Main Reference 
+==============
+
+.. [zeppelin2nb] Wenqiang Feng and Ryan Blue. `Zeppelin notebook to jupyter notebook  Library API <https://runawayhorse001.github.io/zeppelin2nb/>`_, 2019.
+
+.. [jupyter-zeppelin] Ryan Blue. `Jupyter/Zeppelin conversion <https://github.com/rdblue/jupyter-zeppelin>`_, 2017.

@@ -1,0 +1,61 @@
+.. _demo:
+
+.. |eg| replace:: For example:
+
+.. |re| replace:: Result:
+
+
+================
+Converting Demos 
+================
+
+The following demos are designed to show how to use ``zepplin2nb`` to convert the ``.json`` to  ``.ipynb`` , ``.py`` and ``.html``. 
+
+Converting in one function 
+++++++++++++++++++++++++++
+
+|eg|
+
+.. literalinclude:: ../test/demo.py
+     :language: python
+
+
+Converted results 
++++++++++++++++++
+
+|re|     
+ 
+.. figure:: images/test.png
+	:align: center
+
+Results in output:
+
+.. figure:: images/output.png
+	:align: center
+
+Results in output1:
+
+.. figure:: images/output1.png
+	:align: center    
+
+
+.. code-block:: bash
+
+	       .,,.
+	     ,;;*;;;;,
+	    .-'``;-');;.
+	   /'  .-.  /*;;
+	 .'    \d    \;;               .;;;,
+	/ o      `    \;    ,__.     ,;*;;;*;,
+	\__, _.__,'   \_.-') __)--.;;;;;*;;;;,
+	 `""`;;;\       /-')_) __)  `\' ';;;;;;
+	    ;*;;;        -') `)_)  |\ |  ;;;;*;
+	    ;;;;|        `---`    O | | ;;*;;;
+	    *;*;\|                 O  / ;;;;;*
+	   ;;;;;/|    .-------\      / ;*;;;;;
+	  ;;;*;/ \    |        '.   (`. ;;;*;;;
+	  ;;;;;'. ;   |          )   \ | ;;;;;;
+	  ,;*;;;;\/   |.        /   /` | ';;;*;
+	   ;;;;;;/    |/       /   /__/   ';;;
+	   '*wf*/     |       /    |      ;*;
+	        `""""`        `""""`     ;'
