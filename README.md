@@ -1,6 +1,6 @@
-# zeppelin2nb: Zeppelin to jupyter notebook 
+# ze2nb: Zeppelin to jupyter notebook 
 
-This is my Zeppelin notebook to jupyter notebook python library repositories. This library is based on Ryan Blue's Jupyter/Zeppelin conversion: https://github.com/rdblue/jupyter-zeppelin.
+This is our Zeppelin notebook to jupyter notebook python library repositories. This library is based on Ryan Blue's Jupyter/Zeppelin conversion: https://github.com/rdblue/jupyter-zeppelin.
 
 The ``API`` can be found at: https://runawayhorse001.github.io/ze2nb. 
 If you want to install it, you can
