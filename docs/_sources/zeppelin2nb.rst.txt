@@ -1,4 +1,4 @@
-.. _zeppelin2nb:
+.. _ze2nb:
 
 ============================
 Zeppelin to Jupyter Notebook 
@@ -10,48 +10,48 @@ Basic Functions
 mkdir
 -----
 
-.. automodule:: zeppelin2nb.zeppelin2nb	
+.. automodule:: ze2nb.ze2nb	
    :members: mkdir
    :noindex:
 
 file_load
 ---------
 
-.. automodule:: zeppelin2nb.zeppelin2nb	
+.. automodule:: ze2nb.ze2nb	
    :members: file_load
    :noindex:
 
 table_cell_to_html
 ------------------
 
-.. automodule:: zeppelin2nb.zeppelin2nb	
+.. automodule:: ze2nb.ze2nb	
    :members: table_cell_to_html
    :noindex:
 
 table_to_html
 -------------
 
-.. automodule:: zeppelin2nb.zeppelin2nb	
+.. automodule:: ze2nb.ze2nb	
    :members: table_to_html
    :noindex:
 
 convert_parsed
 --------------
 
-.. automodule:: zeppelin2nb.zeppelin2nb	
+.. automodule:: ze2nb.ze2nb	
    :members: convert_parsed
    :noindex:
 
 write_notebook
 --------------
 
-.. automodule:: zeppelin2nb.zeppelin2nb	
+.. automodule:: ze2nb.ze2nb	
    :members: write_notebook
    :noindex:
 
-zeppelin2nb
+ze2nb
 +++++++++++
 
-.. automodule:: zeppelin2nb.zeppelin2nb	
-   :members: zeppelin2nb
+.. automodule:: ze2nb.ze2nb	
+   :members: ze2nb
    :noindex:   

@@ -96,7 +96,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#write-notebook">3.1.6. write_notebook</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3.2. zeppelin2nb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.2. ze2nb</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="demo.html">4. Converting Demos</a></li>
@@ -164,14 +164,14 @@
            <div itemprop="articleBody">
             
   <div class="section" id="zeppelin-to-jupyter-notebook">
-<span id="zeppelin2nb"></span><h1>3. Zeppelin to Jupyter Notebook<a class="headerlink" href="#zeppelin-to-jupyter-notebook" title="Permalink to this headline">¶</a></h1>
+<span id="ze2nb"></span><h1>3. Zeppelin to Jupyter Notebook<a class="headerlink" href="#zeppelin-to-jupyter-notebook" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="basic-functions">
 <h2>3.1. Basic Functions<a class="headerlink" href="#basic-functions" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="mkdir">
 <h3>3.1.1. mkdir<a class="headerlink" href="#mkdir" title="Permalink to this headline">¶</a></h3>
 <dl class="function">
 <dt>
-<code class="descclassname">zeppelin2nb.zeppelin2nb.</code><code class="descname">mkdir</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/../../../../../anaconda3/lib/python3.6/site-packages/zeppelin2nb-1.0.0-py3.6.egg/zeppelin2nb/zeppelin2nb.py#L20-L32"><span class="viewcode-link">[source]</span></a></dt>
+<code class="descclassname">ze2nb.ze2nb.</code><code class="descname">mkdir</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/ze2nb/ze2nb.py#L21-L33"><span class="viewcode-link">[source]</span></a></dt>
 <dd><p>Make a new directory</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -192,7 +192,7 @@
 <h3>3.1.2. file_load<a class="headerlink" href="#file-load" title="Permalink to this headline">¶</a></h3>
 <dl class="function">
 <dt>
-<code class="descclassname">zeppelin2nb.zeppelin2nb.</code><code class="descname">file_load</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/../../../../../anaconda3/lib/python3.6/site-packages/zeppelin2nb-1.0.0-py3.6.egg/zeppelin2nb/zeppelin2nb.py#L35-L45"><span class="viewcode-link">[source]</span></a></dt>
+<code class="descclassname">ze2nb.ze2nb.</code><code class="descname">file_load</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/ze2nb/ze2nb.py#L36-L46"><span class="viewcode-link">[source]</span></a></dt>
 <dd><p>load zeppelin .json file</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -215,7 +215,7 @@
 <h3>3.1.3. table_cell_to_html<a class="headerlink" href="#table-cell-to-html" title="Permalink to this headline">¶</a></h3>
 <dl class="function">
 <dt>
-<code class="descclassname">zeppelin2nb.zeppelin2nb.</code><code class="descname">table_cell_to_html</code><span class="sig-paren">(</span><em>cell</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/../../../../../anaconda3/lib/python3.6/site-packages/zeppelin2nb-1.0.0-py3.6.egg/zeppelin2nb/zeppelin2nb.py#L48-L62"><span class="viewcode-link">[source]</span></a></dt>
+<code class="descclassname">ze2nb.ze2nb.</code><code class="descname">table_cell_to_html</code><span class="sig-paren">(</span><em>cell</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/ze2nb/ze2nb.py#L49-L63"><span class="viewcode-link">[source]</span></a></dt>
 <dd><p>Formats a cell from a Zeppelin TABLE as HTML.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -238,7 +238,7 @@
 <h3>3.1.4. table_to_html<a class="headerlink" href="#table-to-html" title="Permalink to this headline">¶</a></h3>
 <dl class="function">
 <dt>
-<code class="descclassname">zeppelin2nb.zeppelin2nb.</code><code class="descname">table_to_html</code><span class="sig-paren">(</span><em>tsv</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/../../../../../anaconda3/lib/python3.6/site-packages/zeppelin2nb-1.0.0-py3.6.egg/zeppelin2nb/zeppelin2nb.py#L65-L86"><span class="viewcode-link">[source]</span></a></dt>
+<code class="descclassname">ze2nb.ze2nb.</code><code class="descname">table_to_html</code><span class="sig-paren">(</span><em>tsv</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/ze2nb/ze2nb.py#L66-L87"><span class="viewcode-link">[source]</span></a></dt>
 <dd><p>Formats the tab-separated content of a Zeppelin TABLE as HTML.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -261,7 +261,7 @@
 <h3>3.1.5. convert_parsed<a class="headerlink" href="#convert-parsed" title="Permalink to this headline">¶</a></h3>
 <dl class="function">
 <dt>
-<code class="descclassname">zeppelin2nb.zeppelin2nb.</code><code class="descname">convert_parsed</code><span class="sig-paren">(</span><em>zeppelin_note</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/../../../../../anaconda3/lib/python3.6/site-packages/zeppelin2nb-1.0.0-py3.6.egg/zeppelin2nb/zeppelin2nb.py#L89-L192"><span class="viewcode-link">[source]</span></a></dt>
+<code class="descclassname">ze2nb.ze2nb.</code><code class="descname">convert_parsed</code><span class="sig-paren">(</span><em>zeppelin_note</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/ze2nb/ze2nb.py#L90-L199"><span class="viewcode-link">[source]</span></a></dt>
 <dd><p>Converts a Zeppelin note from parsed JSON to a Jupyter Notebook.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -290,7 +290,7 @@
 <h3>3.1.6. write_notebook<a class="headerlink" href="#write-notebook" title="Permalink to this headline">¶</a></h3>
 <dl class="function">
 <dt>
-<code class="descclassname">zeppelin2nb.zeppelin2nb.</code><code class="descname">write_notebook</code><span class="sig-paren">(</span><em>notebook_name</em>, <em>notebook</em>, <em>out_path=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/../../../../../anaconda3/lib/python3.6/site-packages/zeppelin2nb-1.0.0-py3.6.egg/zeppelin2nb/zeppelin2nb.py#L195-L220"><span class="viewcode-link">[source]</span></a></dt>
+<code class="descclassname">ze2nb.ze2nb.</code><code class="descname">write_notebook</code><span class="sig-paren">(</span><em>notebook_name</em>, <em>notebook</em>, <em>out_path=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/ze2nb/ze2nb.py#L202-L227"><span class="viewcode-link">[source]</span></a></dt>
 <dd><p>Writes parsed JSON notebook to a Jupyter notebook .ipynb file from the notebook name.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -319,10 +319,10 @@
 </div>
 </div>
 <div class="section" id="id1">
-<h2>3.2. zeppelin2nb<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>3.2. ze2nb<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
-<code class="descclassname">zeppelin2nb.zeppelin2nb.</code><code class="descname">zeppelin2nb</code><span class="sig-paren">(</span><em>file_name</em>, <em>load_path=None</em>, <em>out_path=None</em>, <em>to_nb=True</em>, <em>to_html=True</em>, <em>to_py=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/../../../../../anaconda3/lib/python3.6/site-packages/zeppelin2nb-1.0.0-py3.6.egg/zeppelin2nb/zeppelin2nb.py#L223-L265"><span class="viewcode-link">[source]</span></a></dt>
+<code class="descclassname">ze2nb.ze2nb.</code><code class="descname">ze2nb</code><span class="sig-paren">(</span><em>file_name</em>, <em>load_path=None</em>, <em>out_path=None</em>, <em>to_nb=True</em>, <em>to_html=True</em>, <em>to_py=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/ze2nb/blob/master/ze2nb/ze2nb.py#L230-L272"><span class="viewcode-link">[source]</span></a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -332,7 +332,7 @@
 <li><strong>load_path</strong> – the load path for the input JSON file</li>
 <li><strong>out_path</strong> – the output path for the converted files</li>
 <li><strong>to_nb</strong> – the flag for keeping .ipynb</li>
-<li><strong>to_html</strong> – the flag for converting to HTML</li>
+<li><strong>to_html</strong> – the flag for converting to .html</li>
 <li><strong>to_py</strong> – the flag for converting to .py</li>
 </ul>
 </td>
@@ -375,7 +375,7 @@
     <p>
         &copy; Copyright 2019, Wenqiang Feng and Ryan Blue
       <span class="lastupdated">
-        Last updated on Jun 20, 2019.
+        Last updated on Jun 21, 2019.
       </span>
 
     </p>
