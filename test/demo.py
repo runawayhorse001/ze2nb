@@ -16,7 +16,7 @@ ze2nb('H2o_Sparking.json', out_path=output, to_html=True, to_py=True)
 
 # scenario 3
 # with load and output path
-load_path = '/Users/******/Documents/MyJson/'
+load_path = '/Users/dt216661/Documents/MyJson/'
 output = os.path.abspath(os.path.join(sys.path[0])) +'/output1'
 ze2nb('H2o_GBM.json', load_path=load_path, out_path=output, to_html=True, to_py=True)
 

@@ -242,12 +242,12 @@ def ze2nb(file_name, load_path=None, out_path=None, to_nb=True, to_html=True, to
     :github:  https://github.com/rdblue
     """
 
-    if not load_path:
+    if load_path is None:
         load_path = os.getcwd()
     else:
         load_path = load_path
 
-    if not out_path:
+    if out_path is None:
         out_path = os.getcwd()
     else:
         out_path = out_path
@@ -268,6 +268,6 @@ def ze2nb(file_name, load_path=None, out_path=None, to_nb=True, to_html=True, to
         os.system("jupyter nbconvert %s --to python" % (out_path+'/'+name + '.ipynb'))
 
     # remove the .ipynb
-    if to_nb==False:
+    if to_nb is False:
         os.system('rm %s'%(name+'.ipynb'))
 
