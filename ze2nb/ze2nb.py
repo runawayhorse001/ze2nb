@@ -21,9 +21,7 @@ HTML = re.compile(r'%html\s')
 def mkdir(path):
     """
     Make a new directory
-
     :param path: the directory path
-
     :author: Wenqiang Feng
     :email:  von198@gmail.com
     """
@@ -36,10 +34,8 @@ def mkdir(path):
 def file_load(file_name):
     """
     load zeppelin .json file
-
     :param file_name: the input .json file name
     :return: encoded text content from .json file
-
     :author: Wenqiang Feng
     :email:  von198@gmail.com
     """
@@ -49,10 +45,8 @@ def file_load(file_name):
 def table_cell_to_html(cell):
     """
     Formats a cell from a Zeppelin TABLE as HTML.
-
     :param cell: cell from Zeppelin
     :return: zeppelin TABLE as HTML
-
     :author: Ryan Blue
     :Github:  https://github.com/rdblue
     """
@@ -66,16 +60,14 @@ def table_cell_to_html(cell):
 def table_to_html(tsv):
     """
     Formats the tab-separated content of a Zeppelin TABLE as HTML.
-
     :param cell: cell from Zeppelin
     :return: zeppelin TABLE as HTML
-
     :author: Ryan Blue
     :Github:  https://github.com/rdblue
     """
-    io = StringIO.StringIO(tsv)
+    io = StringIO(tsv)
     reader = csv.reader(io, delimiter="\t")
-    fields = reader.next()
+    fields = next(reader)
     column_headers = "".join([ "<th>" + name + "</th>" for name in fields ])
     lines = [
             "<table>",
@@ -90,11 +82,9 @@ def table_to_html(tsv):
 def convert_parsed(zeppelin_note):
     """
     Converts a Zeppelin note from parsed JSON to a Jupyter Notebook.
-
     :param zeppelin_note: encoded JSON file
     :return notebook_name: the JSON notebook name
     :return notebook_name: the parsed Jupyter notebook content
-
     :author: Ryan Blue and Wenqiang Feng
     :github:  https://github.com/rdblue
     :email:  von198@gmail.com
@@ -202,17 +192,14 @@ def convert_parsed(zeppelin_note):
 def write_notebook(notebook_name, notebook, out_path=None):
     """
     Writes parsed JSON notebook to a Jupyter notebook .ipynb file from the notebook name.
-
     :param notebook_name: JSON notebook name and output Jupyter notebook name
     :param notebook: parsed JSON notebook contents
     :param out_path:  Jupyter notebook output path, the default output path is current directory.
-
     :author: Wenqiang Feng and Ryan Blue
     :email:  von198@gmail.com
     :github:  https://github.com/rdblue
     """
     """
-
     If path is None, the output path will be created the notebook name in the current directory.
     """
     if not out_path:
@@ -229,15 +216,13 @@ def write_notebook(notebook_name, notebook, out_path=None):
 
 def ze2nb(file_name, load_path=None, out_path=None, to_nb=True, to_html=True, to_py=True):
     """
-
     :param file_name: the input JSON file name
     :param load_path: the load path for the input JSON file
     :param out_path: the output path for the converted files
     :param to_nb: the flag for keeping .ipynb
     :param to_html: the flag for converting to .html
     :param to_py: the flag for converting to .py
-
-    :author: Wenqiang Feng and Ryan Blue
+    :author: Wenqiang Feng and Ryan Blue and Jay Franck
     :email:  von198@gmail.com
     :github:  https://github.com/rdblue
     """
